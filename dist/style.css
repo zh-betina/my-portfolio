@@ -1,0 +1,163 @@
+.nav,
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: space-between;
+}
+
+.nav {
+  box-sizing: border-box;
+  padding: 2rem 2rem;
+  max-width: 100vw;
+  margin-bottom: 1.5rem;
+}
+.nav__list {
+  list-style: none;
+  padding: 0.5rem;
+  margin: 0;
+  position: relative;
+}
+.nav__list--link {
+  margin-right: 6rem;
+  border: solid 0.5px #87556f;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+}
+.nav__logo {
+  padding: 0.8rem;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #54123B;
+}
+
+section {
+  min-height: 100vh;
+  margin: 0;
+  padding: 5rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a:link, a:active, a:visited {
+  text-decoration: none;
+  color: #29C7AC;
+}
+
+.txt__nav {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.txt__header {
+  color: #87556f;
+  margin-top: 11rem;
+  margin-left: 30rem;
+}
+.txt__header span:first-child {
+  font-size: 11rem;
+  letter-spacing: 1.6rem;
+}
+.txt__header span:nth-child(2) {
+  display: block;
+  font-size: 9rem;
+}
+.txt__section--heading {
+  font-size: 3rem;
+  text-align: center;
+  color: #FF6768;
+}
+.txt__section--p {
+  font-size: 2.5rem;
+  text-align: justify;
+  color: #A0CFC7;
+  margin: 2rem;
+}
+
+.header {
+  min-height: 100vh;
+  max-height: 100vh;
+}
+.header__img--computer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+.header__img--studying-girl {
+  position: absolute;
+  bottom: 13.5rem;
+  right: 25rem;
+  width: 34rem;
+  height: 34rem;
+  z-index: 1;
+}
+
+.line-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3rem;
+  width: 90rem;
+}
+.line-wrapper__contact {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rem;
+}
+
+.btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.section__about-me {
+  background-color: #2D132C;
+}
+.section__projects {
+  background-color: #87556f;
+}
+
+.btn {
+  color: #EE4540;
+  background-color: transparent;
+  border: unset;
+  cursor: pointer;
+  font-size: 2.1rem;
+}
+
+.icon {
+  fill: #A0CFC7;
+  min-height: 7rem;
+  max-height: 7rem;
+}
+.icon__location {
+  min-width: 3rem;
+  max-width: 5rem;
+}
+.icon__languages {
+  min-width: 8rem;
+  max-width: 15rem;
+}
+.icon__contact {
+  fill: #A86363;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

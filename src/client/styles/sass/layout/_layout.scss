@@ -1,0 +1,18 @@
+.line-wrapper{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3rem;
+    width: 90rem;
+        &__contact{
+            justify-content: space-around;
+            display: flex;
+            flex-direction: row;
+            margin-top: 10rem;
+        }
+}
+
+.btn-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

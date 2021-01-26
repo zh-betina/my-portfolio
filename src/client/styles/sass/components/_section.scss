@@ -1,0 +1,10 @@
+@import "../abstracts/variables";
+
+.section{
+    &__about-me{
+        background-color: $aboutBgrClr;
+    }
+    &__projects{
+        background-color: $projectsBgrClr;
+    }
+}

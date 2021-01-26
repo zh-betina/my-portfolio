@@ -1,0 +1,19 @@
+@import "../abstracts/variables";
+
+.icon{
+    fill: $iconClr;
+    min-height: 7rem;
+    max-height: 7rem;
+        &__location{
+            min-width: 3rem;
+            max-width: 5rem;
+        }
+        &__languages{
+            min-width: 8rem;
+            max-width: 15rem;
+        }
+        &__contact{
+            fill: $iconContClr;
+            cursor: pointer;
+        }
+}

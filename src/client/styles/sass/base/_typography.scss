@@ -1,0 +1,47 @@
+@import "../abstracts/variables";
+
+html{
+    font-size: 62.5%;
+}
+
+a{
+    &:link,
+    &:active,
+    &:visited{
+        text-decoration: none;
+        color: $navLinkClr;
+    }
+}
+
+.txt{
+    &__nav{
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+    &__header{
+        span:first-child{
+            font-size: 11rem;
+            letter-spacing: 1.6rem;
+        }
+        span:nth-child(2){
+            display: block;
+            font-size: 9rem;
+        }
+        color: $headerTxtClr;
+        margin-top: 11rem;
+        margin-left: 30rem;
+    }
+    &__section{
+        &--heading{
+            font-size: 3rem;
+            text-align: center;
+            color: $headingPrimaryClr;
+        }
+        &--p{
+            font-size: 2.5rem;
+            text-align: justify;
+            color: $pPrimaryClr;
+            margin: 2rem;
+        }
+    }
+}
