@@ -14,6 +14,10 @@
         }
         &__contact{
             fill: $iconContClr;
-            cursor: pointer;
+            transition: all .6s;
+            &:hover{
+                fill: darken($iconContClr, 20%);
+                transform: scale(1.1);
+            }
         }
 }

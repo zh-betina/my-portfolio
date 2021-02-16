@@ -24,6 +24,10 @@ const main = () => {
         navBtnClickHandler([header, aboutSection, contactSection], projectsSection);
     });
 
+    //show Contact Section
+    contactBtn.addEventListener("click", ()=>{
+        navBtnClickHandler([header, aboutSection, projectsSection], contactSection);
+    })
 
 
 }

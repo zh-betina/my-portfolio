@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 @keyframes txtAppear {
   from {
     opacity: 0;
@@ -96,12 +97,13 @@ body {
 }
 
 body {
-  background-color: #54123B;
+  background-color: #200f21;
 }
 
 section {
   margin: 0;
   padding: 16rem 2rem 2rem 2rem;
+  overflow-y: hidden;
 }
 
 article {
@@ -170,9 +172,13 @@ a:hover {
   opacity: 0;
 }
 .txt__section--heading {
-  font-size: 3rem;
+  font-size: 5rem;
   text-align: center;
-  color: #FF6768;
+  color: #95FFEC;
+  font-family: "Indie Flower", cursive;
+}
+.txt__section--heading span:first-child, .txt__section--heading span:last-child {
+  color: #559DE0;
 }
 .txt__section--p {
   font-size: 2.5rem;
@@ -255,7 +261,7 @@ a:hover {
   justify-content: space-around;
   display: flex;
   flex-direction: row;
-  margin-top: 10rem;
+  transform: translateY(50%);
 }
 
 .btn-wrapper {
@@ -268,7 +274,10 @@ a:hover {
   background-color: #2D132C;
 }
 .section__projects {
-  background-color: #52057b;
+  background-color: #2c003e;
+}
+.section__contact {
+  background-color: #221f3b;
 }
 
 .btn {
@@ -293,8 +302,12 @@ a:hover {
   max-width: 15rem;
 }
 .icon__contact {
-  fill: #A86363;
-  cursor: pointer;
+  fill: #c299fc;
+  transition: all 0.6s;
+}
+.icon__contact:hover {
+  fill: #8736f9;
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */
