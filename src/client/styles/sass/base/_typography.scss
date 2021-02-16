@@ -5,11 +5,15 @@ html{
 }
 
 a{
+    transition: all .4s;
     &:link,
     &:active,
     &:visited{
         text-decoration: none;
         color: $navLinkClr;
+    }
+    &:hover{
+        color: $navLinkHvr;
     }
 }
 

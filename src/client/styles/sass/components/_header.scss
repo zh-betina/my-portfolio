@@ -2,7 +2,6 @@
     height: 100vh;
     max-height: 100vh;
     overflow: hidden;
-    margin-top: -11rem;
     &__img{
         &--computer{
             position: absolute;
@@ -14,7 +13,7 @@
         }
         &--studying-girl{
             position: relative;
-            bottom: 40rem;
+            bottom: 35rem;
             width: 196rem;
             height: 100%;
             z-index: 1;
