@@ -13,12 +13,13 @@
     box-sizing: border-box;
     padding: 2rem 2rem;
     max-width: 100vw;
-    margin-bottom: 1.5rem;
+    height: 11rem;
         &__list{
             list-style: none;
             padding: .5rem;
             margin: 0;
             position: relative;
+            width: 40%;
                 &--link{
                     margin-right: 6rem;
                     border: solid .5px $navLinkBordClr;

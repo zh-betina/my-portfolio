@@ -16,20 +16,23 @@ a{
 .txt{
     &__nav{
         text-transform: uppercase;
-        font-size: 2rem;
+        font-size: 3rem;
     }
     &__header{
         span:first-child{
-            font-size: 11rem;
+            font-size: 20rem;
             letter-spacing: 1.6rem;
         }
         span:nth-child(2){
             display: block;
-            font-size: 9rem;
+            font-size: 15rem;
+            opacity: 0;
         }
         color: $headerTxtClr;
-        margin-top: 11rem;
-        margin-left: 30rem;
+        z-index: 7;
+        top: 11rem;
+        left: 30rem;
+        position: relative;
     }
     &__section{
         &--heading{

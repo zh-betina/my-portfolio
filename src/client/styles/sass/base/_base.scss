@@ -22,3 +22,12 @@ article{
     flex-direction: column;
     align-items: center;
 }
+
+.txtAppearFirst{
+    animation: txtAppear 2s forwards;
+}
+
+.txtAppearLater{
+    animation: txtAppear 2s forwards;
+    animation-delay: 1s;
+}

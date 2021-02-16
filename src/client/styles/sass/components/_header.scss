@@ -1,20 +1,24 @@
 .header{
-    min-height: 100vh;
+    height: 100vh;
     max-height: 100vh;
+    overflow: hidden;
+    margin-top: -11rem;
     &__img{
         &--computer{
             position: absolute;
             bottom: 0;
             right: 0;
             z-index: 2;
+            height: auto;
+            width: 50%;
         }
         &--studying-girl{
-            position: absolute;
-            bottom: 13.5rem;
-            right: 25rem;
-            width: 34rem;
-            height: 34rem;
+            position: relative;
+            bottom: 40rem;
+            width: 196rem;
+            height: 100%;
             z-index: 1;
+            left: 8vw;
         }
     }
 }
