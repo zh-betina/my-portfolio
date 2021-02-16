@@ -1,5 +1,4 @@
 import { navBtnClickHandler } from "./helpers.js";
-import starrySky from "./starrySky.js";
 
 
 
@@ -15,7 +14,6 @@ const main = () => {
     const projectsSection = document.querySelector(".section__projects");
     const contactSection = document.querySelector(".section__contact");
 
-    starrySky(header);
     aboutBtn.addEventListener("click", ()=>{
         navBtnClickHandler([header, projectsSection, contactSection], null);
     })
