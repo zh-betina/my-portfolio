@@ -1,6 +1,4 @@
 .header{
-    height: 100vh;
-    max-height: 100vh;
     overflow: hidden;
     &__img{
         &--computer{
@@ -12,11 +10,11 @@
             width: 50%;
         }
         &--studying-girl{
-            position: relative;
-            bottom: 35rem;
-            width: auto;
-            height: 100%;
+            position: absolute;
+            bottom: 0;
+            width: 75%;
             z-index: 1;
+            height: auto;
             left: 10vw;
         }
     }

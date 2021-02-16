@@ -14,9 +14,15 @@ const main = () => {
     const projectsSection = document.querySelector(".section__projects");
     const contactSection = document.querySelector(".section__contact");
 
+    //show About Section
     aboutBtn.addEventListener("click", ()=>{
-        navBtnClickHandler([header, projectsSection, contactSection], null);
-    })
+        navBtnClickHandler([header, projectsSection, contactSection], aboutSection);
+    });
+
+    //show Projects Section
+    projectsBtn.addEventListener("click", ()=>{
+        navBtnClickHandler([header, aboutSection, contactSection], projectsSection);
+    });
 
 
 
