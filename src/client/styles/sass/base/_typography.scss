@@ -1,5 +1,5 @@
 @import "../abstracts/variables";
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Source+Code+Pro:wght@600&display=swap');
 
 html{
     font-size: 62.5%;
@@ -45,7 +45,8 @@ a{
     }
     &__section{
         &--heading{
-            font-size: 5rem;
+            font-size: 4.8rem;
+            margin-bottom: 10rem;
             text-align: center;
             color: $headingPrimaryClr;
             font-family: 'Indie Flower', cursive;
@@ -59,6 +60,20 @@ a{
             text-align: justify;
             color: $pPrimaryClr;
             margin: 2rem;
+        }
+        &--imp{
+            color: $txtImportant;
+            font-weight: 600;
+        }
+    }
+    &__about-me{
+        &--large{
+            text-align: center;
+            color: lighten($pPrimaryClr, 2%);
+            font-size: 3.4rem;
+            & span:nth-child(2){
+                display: block;
+            }
         }
     }
 }

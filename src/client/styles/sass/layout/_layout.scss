@@ -9,10 +9,26 @@
             flex-direction: row;
             transform: translateY(50%);
         }
+        &--loc{
+            width: 100rem;
+        }
 }
 
 .btn-wrapper{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.about-me--wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem;
+    & article:last-child{
+        height: 48vh;
+        overflow-y: scroll;
+        background-color: darken($aboutBgrClr, 1%);
+    }
 }

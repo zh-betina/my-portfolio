@@ -3,6 +3,8 @@
 .section{
     &__about-me{
         background-color: $aboutBgrClr;
+        overflow-y: scroll;
+        height: 100vh;
     }
     &__projects{
         background-color: $projectsBgrClr;
