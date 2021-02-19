@@ -23,12 +23,15 @@
 .about-me--wrapper{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 1rem;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    padding: 1rem 1rem 10% 1rem;
     & article:last-child{
-        height: 48vh;
+        height: 60%;
         overflow-y: scroll;
         background-color: darken($aboutBgrClr, 1%);
+    }
+    @media (max-width: 1980px){
+        flex-direction: column;
     }
 }

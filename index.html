@@ -8,7 +8,7 @@
     <meta name="description" content="Betina Zhou's Front-End Dev Portfolio presenting the range 
                   of skills and technologies used for different projects.">
     <link rel="stylesheet" href="dist/style.css">
-    <script type="module" src="./src/client/js/main.js"></script>
+    <script src="./dist/slidr.min.js"></script>
     <title>Betina Zhou - Front-End Development Portfolio</title>
 </head>
 
@@ -491,14 +491,13 @@
 
     </header>
     <section class="section__about-me hidePage">
-        <h2 class="txt__section--heading"><span>{</span> Betina Zhou <span>}</span></h2>
+        <h2 class="txt__section--heading txt--fixed"><span>{</span> Betina Zhou <span>}</span></h2>
         <div class="about-me--wrapper">
             <article>
                 <img class="img__about-me" src="./src/client/views/media/png/profile.png">
-                <h3 class="txt__about-me--large">Looking for one-or-two-month internship in <em>Front-End
+                <h3 class="txt__about-me--large">Looking for two-month internship in <em>Front-End
                         development!</em><span>Ideally in June-August period.</span></h3>
                 <p class="txt__section--p">Located in France (Ile-de-France) but open to remote work</p>
-
             </article>
             <article>
                 <!--<div class="btn-wrapper">
@@ -543,7 +542,8 @@
                 </div>
                 <div class="line-wrapper">
                     <p class="txt__section--p">On my To-Do List stay following subjects: unitary tests, TypeScript and
-                        MongoDB. Having fun trying out C#, Python and Dart (Flutter).</p>
+                        MongoDB. Having fun trying out C#, Python and Dart (Flutter) (mostly a school curriculum
+                        requirement).</p>
                     <svg class="icon__plans icon" fill="#000000" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 128 128" width="128px" height="128px">
                         <path
@@ -555,10 +555,29 @@
     </section>
     <section class="section__projects hidePage">
         <h2 class="txt__section--heading"><span>{</span> Projects <span>}</span></h2>
-        <article>
-
-        </article>
-
+        <button id="btnNext">NEXT</button>
+        <button id="btnPrev">PREVIOUS</button>
+        <div class="projects__wrapper">
+            <div class="project">
+                <h3 class="txt__about-me--large">Landing Page - Beauty Workshops</h3>-->
+                <img class="project__img" src="./src/client/views/media/png/beautyWorkshops.png">
+                <p class="txt__section--p">Technologies: HTML, CSS, JavaScript</p>
+                <p class="txt__section--p">Responsive. Dynamic navigation bar content. Scroll-to-the-top button.</p>
+            </div>
+            <div class="project hidePage">
+                <h3 class="txt__about-me--large">Landing Page - Your Next Holidays</h3>
+                <img class="project__img" src="./src/client/views/media/png/yourHolidays.png">
+                <p class="txt__section--p">Technologies: HTML, SCSS</p>
+                <p class="txt__section--p">Responsive. Animated on-hover buttons. Menu for smaller screens without
+                    JavaScript.</p>
+            </div>
+            <div class="project hidePage">
+                <h3 class="txt__about-me--large">Web Tool - SimCredit</h3>
+                <img class="project__img" src="./src/client/views/media/png/simCredit.png">
+                <p class="txt__section--p">Technologies & Tools: HTML, SCSS, JavaScript, Chart.js, npm, Figma</p>
+                <p class="txt__section--p">Communication with REST API, chart.</p>
+            </div>
+        </div>
     </section>
     <section class="section__contact hidePage">
         <h2 class="txt__section--heading"><span>{</span> Contact <span>}</span></h2>
@@ -585,6 +604,7 @@
             </a>
         </div>
     </section>
+    <script type="module" src="./src/client/js/main.js"></script>
 </body>
 
 </html>

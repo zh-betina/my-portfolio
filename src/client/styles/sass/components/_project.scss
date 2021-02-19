@@ -1,0 +1,13 @@
+.projects__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10%;
+}
+
+.project{
+    &__img{
+        max-height: 40vh;
+        width: auto;
+    }
+}

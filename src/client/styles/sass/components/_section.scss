@@ -5,11 +5,14 @@
         background-color: $aboutBgrClr;
         overflow-y: scroll;
         height: 100vh;
+        width: 100vw;
     }
     &__projects{
         background-color: $projectsBgrClr;
+        width: 100vw;
     }
     &__contact{
         background-color: $contactBgrClr;
+        width: 100vw;
     }
 }

@@ -1,7 +1,5 @@
 import { navBtnClickHandler } from "./helpers.js";
 
-
-
 const main = () => {
     //btns
     const aboutBtn = document.getElementById("about");
@@ -28,8 +26,6 @@ const main = () => {
     contactBtn.addEventListener("click", ()=>{
         navBtnClickHandler([header, aboutSection, projectsSection], contactSection);
     })
-
-
 }
 
 main();
