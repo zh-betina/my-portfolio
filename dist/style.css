@@ -38,11 +38,17 @@
   visibility: hidden;
   font-size: 5rem;
   color: #87556f;
+  position: absolute;
+  right: 11px;
+  top: 8px;
 }
 @media (max-width: 450px) {
   .nav__hamb-menu {
     visibility: visible;
   }
+}
+.nav__hamb-menu:hover {
+  color: #29C7AC;
 }
 .nav__list {
   list-style: none;
@@ -62,9 +68,6 @@
   padding: 1.2rem;
   border-radius: 0.5rem;
   transition: all 0.4s;
-}
-.nav__list--link:hover {
-  background-color: #350b40;
 }
 .nav__logo {
   max-height: 7rem;
@@ -216,6 +219,11 @@ a:hover {
   margin: 2rem;
   font-family: "Lato", sans-serif;
 }
+@media (max-width: 1014px) {
+  .txt__section--p {
+    font-size: 2rem;
+  }
+}
 .txt__section--imp {
   color: #8ec6c5;
   font-weight: 600;
@@ -261,7 +269,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   margin-bottom: 3rem;
-  width: 90rem;
+  max-width: 90rem;
 }
 .line-wrapper__contact {
   justify-content: space-around;
@@ -293,11 +301,9 @@ a:hover {
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: nowrap;
-  padding: 1rem 1rem 10% 1rem;
+  padding: 1rem 1rem 15vh 1rem;
 }
 .about-me--wrapper article:last-child {
-  height: 60%;
-  overflow-y: scroll;
   background-color: #291128;
 }
 @media (max-width: 1980px) {

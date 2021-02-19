@@ -27,8 +27,14 @@
             visibility: hidden;
             font-size: 5rem;
             color: $navLinkBordClr;
+            position: absolute;
+            right: 11px;
+            top: 8px;
             @media (max-width: 450px){
                 visibility: visible;
+            }
+            &:hover{
+                color: $navLinkClr;
             }
         }
         &__list{
@@ -46,9 +52,6 @@
                     padding: 1.2rem;
                     border-radius: .5rem;
                     transition: all .4s;
-                    &:hover{
-                        background-color: $navBtnHvr;
-                    }
                 }
         }
     &__logo{
