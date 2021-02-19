@@ -19,7 +19,7 @@ body{
 
 section {
     margin: 0;
-    padding: 5% 2% 5% 2%;
+    padding: 15vh 2% 5% 2%;
 }
 
 article{
@@ -44,4 +44,8 @@ article{
 
 .showPage{
     height: 100vh;
+}
+
+.hidden{
+    visibility: hidden;
 }

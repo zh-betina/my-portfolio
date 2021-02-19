@@ -7,7 +7,14 @@
             justify-content: space-around;
             display: flex;
             flex-direction: row;
-            transform: translateY(50%);
+            position: relative;
+            top: 25%;
+            @media (max-width: 1000px){
+                flex-direction: column;
+                align-items: center;
+                top: 10%;
+                height: 61vh;
+            }
         }
         &--loc{
             width: 100rem;

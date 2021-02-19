@@ -1,7 +1,8 @@
 @import "../abstracts/variables";
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Source+Code+Pro:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
 html{
     font-size: 62.5%;
 }
@@ -23,6 +24,7 @@ a{
     &__nav{
         text-transform: uppercase;
         font-size: 3rem;
+        font-family: 'Josefin Sans', sans-serif;
         @media (max-width: 1379px){
             font-size: 1.6rem;
         }
@@ -37,11 +39,18 @@ a{
         span:first-child{
             font-size: 20rem;
             letter-spacing: 1.6rem;
+            @media (max-width: 1379px){
+                font-size: 15rem;
+                letter-spacing: 0;
+            }
         }
         span:nth-child(2){
             display: block;
             font-size: 15rem;
             opacity: 0;
+            @media (max-width: 1379px){
+                font-size: 10rem;
+            }
         }
         color: $headerTxtClr;
         z-index: 7;
@@ -56,7 +65,7 @@ a{
             margin-bottom: 2%;
             text-align: center;
             color: $headingPrimaryClr;
-            font-family: 'Playfair Display', serif;
+            font-family: 'Raleway Dots', cursive;
             @media (max-width: 1379px){
                 font-size: 3rem;
             }
@@ -76,6 +85,7 @@ a{
             text-align: justify;
             color: $pPrimaryClr;
             margin: 2rem;
+            font-family: 'Lato', sans-serif;
         }
         &--imp{
             color: $txtImportant;
