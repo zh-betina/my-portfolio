@@ -8,6 +8,9 @@ const main = () => {
     const contactBtn = document.querySelectorAll(".contact");
     const mobileMenuBtn = document.getElementById("mobileMenuBtn");
     const mobileMenuCloseBtn = document.getElementById("mobileMenuCloseBtn");
+    const mobileAboutBtn = document.getElementById("aboutMob");
+    const mobileProjectsBtn = document.getElementById("projectsMob");
+    const mobileContactBtn = document.getElementById("contactMob");
 
     //header + sections
     const header = document.querySelector(".header");
@@ -18,6 +21,22 @@ const main = () => {
     //mobile menu
     const menuPage = document.querySelector(".nav__mobile");
     const menuPageList = document.querySelector(".nav__mobile-list");
+
+    //mobile navigation btns
+    mobileAboutBtn.addEventListener("click", ()=>{
+        mobileMenuIconSwitchClose(mobileMenuCloseBtn, mobileMenuBtn);
+        mobileMenuDisappear(menuPage, menuPageList);
+    });
+
+    mobileProjectsBtn.addEventListener("click", ()=>{
+        mobileMenuIconSwitchClose(mobileMenuCloseBtn, mobileMenuBtn);
+        mobileMenuDisappear(menuPage, menuPageList);
+    });
+
+    mobileContactBtn.addEventListener("click", ()=>{
+        mobileMenuIconSwitchClose(mobileMenuCloseBtn, mobileMenuBtn);
+        mobileMenuDisappear(menuPage, menuPageList);
+    });
 
     //show About Section
     aboutBtn.forEach(el=>{

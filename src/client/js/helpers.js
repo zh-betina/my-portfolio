@@ -1,10 +1,20 @@
 const navBtnClickHandler = (pagesToHide, pageToShow) =>{
     pagesToHide.forEach(el=>{
-        el.classList.remove("showPage");
+        if(el.className == "section__projects showPageFlex" || "section__projects showPageFlex showPage"){
+            el.classList.remove("showPageFlex");
+            el.classList.remove("showPage");
+        }else{
+            el.classList.remove("showPage");
+        }
         el.classList.add("hidePage");
     });
+
     pageToShow.classList.remove("hidePage");
-    pageToShow.classList.add("showPage");
+    if(pageToShow.className == "section__projects"){
+        pageToShow.classList.add("showPageFlex")
+    }else{
+        pageToShow.classList.add("showPage");
+    }
 }
 
 const mobileMenuAppear = (wrapper, links)=>{

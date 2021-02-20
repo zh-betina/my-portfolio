@@ -27,8 +27,12 @@
 }
 
 @keyframes scaleTo1{
-    to {
-        font-size: 6rem;
+    80% {
+        font-size: 5rem;
+        transform: scale(1.2);
+    }
+    100%{
+        font-size: 8rem;
     }
 }
 

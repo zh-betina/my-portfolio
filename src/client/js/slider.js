@@ -1,9 +1,10 @@
 const slider = ()=> {
     return slidr.create('slider', {
-        controls: 'none',
         touch: true,
+        keyboard: true,
         overflow: true,
-        breadcrumps: true
+        breadcrumps: true,
+        theme: '#fff'
     }).start();
 }
 

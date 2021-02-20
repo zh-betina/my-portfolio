@@ -44,8 +44,13 @@ article{
 
 .showPage{
     height: 100vh;
+    display: block;
 }
 
+.showPageFlex{
+    height: 100vh;
+    display: flex;
+}
 .hidden{
     visibility: hidden;
 }
@@ -63,7 +68,7 @@ article{
 }
 
 .scaleBack{
-    animation: scaleTo1 1s forwards;
+    animation: scaleTo1 .8s forwards;
 }
 
 .menuClose{

@@ -10,6 +10,9 @@
     &__projects{
         background-color: $projectsBgrClr;
         width: 100vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: stretch;
     }
     &__contact{
         background-color: $contactBgrClr;
