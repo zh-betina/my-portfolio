@@ -1,4 +1,5 @@
 import { navBtnClickHandler } from "./helpers.js";
+import slider from "./slider.js";
 
 const main = () => {
     //btns
@@ -26,6 +27,8 @@ const main = () => {
     contactBtn.addEventListener("click", ()=>{
         navBtnClickHandler([header, aboutSection, projectsSection], contactSection);
     })
+
+    slider();
 }
 
 main();

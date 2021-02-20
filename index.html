@@ -167,6 +167,13 @@
             </svg>
         </a>
         <span class="nav__hamb-menu">≡</span>
+        <div class="nav__mobile hidePage">
+            <ul class="nav__mobile-list txt__nav">
+                <li class="nav__mobile-list--link"><a href="#">about me</a></li>
+                <li class="nav__mobile-list--link"><a href="#">projects</a></li>
+                <li class="nav__mobile-list--link"><a href="#">contact</a></li>
+            </ul>
+        </div>
         <ul class="nav__list txt__nav">
             <li class="nav__list--link"><a href="#" id="about">about me</a></li>
             <li class="nav__list--link"><a href="#" id="projects">projects</a></li>
@@ -554,23 +561,21 @@
     </section>
     <section class="section__projects hidePage">
         <h2 class="txt__section--heading"><span>{</span> Projects <span>}</span></h2>
-        <button id="btnNext">NEXT</button>
-        <button id="btnPrev">PREVIOUS</button>
-        <div class="projects__wrapper">
-            <div class="project">
+        <div class="projects__wrapper" id="slider">
+            <div class="project" data-slidr="one">
                 <h3 class="txt__about-me--large">Landing Page - Beauty Workshops</h3>-->
                 <img class="project__img" src="./src/client/views/media/png/beautyWorkshops.png">
                 <p class="txt__section--p">Technologies: HTML, CSS, JavaScript</p>
                 <p class="txt__section--p">Responsive. Dynamic navigation bar content. Scroll-to-the-top button.</p>
             </div>
-            <div class="project hidePage">
+            <div class="project" data-slidr="two">
                 <h3 class="txt__about-me--large">Landing Page - Your Next Holidays</h3>
                 <img class="project__img" src="./src/client/views/media/png/yourHolidays.png">
                 <p class="txt__section--p">Technologies: HTML, SCSS</p>
                 <p class="txt__section--p">Responsive. Animated on-hover buttons. Menu for smaller screens without
                     JavaScript.</p>
             </div>
-            <div class="project hidePage">
+            <div class="project" data-slidr="three">
                 <h3 class="txt__about-me--large">Web Tool - SimCredit</h3>
                 <img class="project__img" src="./src/client/views/media/png/simCredit.png">
                 <p class="txt__section--p">Technologies & Tools: HTML, SCSS, JavaScript, Chart.js, npm, Figma</p>
@@ -603,6 +608,7 @@
             </a>
         </div>
     </section>
+    <script src="./dist/slidr.min.js"></script>
     <script type="module" src="./src/client/js/main.js"></script>
 </body>
 

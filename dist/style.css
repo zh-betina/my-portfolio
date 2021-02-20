@@ -34,6 +34,26 @@
   -webkit-box-shadow: 0px 7px 12px -2px rgba(0, 0, 0, 0.76);
   -moz-box-shadow: 0px 7px 12px -2px rgba(0, 0, 0, 0.76);
 }
+.nav__mobile {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  z-index: 11;
+  position: absolute;
+  width: 100vw;
+  top: 0rem;
+  left: 0;
+}
+@media (max-width: 450px) {
+  .nav__mobile {
+    visibility: visible;
+  }
+}
+.nav__mobile-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .nav__hamb-menu {
   visibility: hidden;
   font-size: 5rem;
@@ -41,6 +61,7 @@
   position: absolute;
   right: 11px;
   top: 8px;
+  z-index: 12;
 }
 @media (max-width: 450px) {
   .nav__hamb-menu {
