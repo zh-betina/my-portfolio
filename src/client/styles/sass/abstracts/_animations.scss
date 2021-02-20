@@ -4,5 +4,30 @@
     }
     to {
         opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes heightChange{
+    from {
+        height: 0;
+    }
+    to {
+        height: 100vh;
+    }
+}
+
+@keyframes scaleTo0{
+    80% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes scaleTo1{
+    to {
+        font-size: 6rem;
     }
 }

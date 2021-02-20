@@ -1,11 +1,13 @@
-import { navBtnClickHandler } from "./helpers.js";
+import { navBtnClickHandler, mobileMenuAppear, mobileMenuIconSwitch } from "./helpers.js";
 import slider from "./slider.js";
 
 const main = () => {
     //btns
-    const aboutBtn = document.getElementById("about");
-    const projectsBtn = document.getElementById("projects");
-    const contactBtn = document.getElementById("contact");
+    const aboutBtn = document.querySelectorAll(".about");
+    const projectsBtn = document.querySelectorAll(".projects");
+    const contactBtn = document.querySelectorAll(".contact");
+    const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+    const mobileMenuCloseBtn = document.getElementById("mobileMenuCloseBtn");
 
     //header + sections
     const header = document.querySelector(".header");
@@ -13,20 +15,38 @@ const main = () => {
     const projectsSection = document.querySelector(".section__projects");
     const contactSection = document.querySelector(".section__contact");
 
+    //mobile menu
+    const menuPage = document.querySelector(".nav__mobile");
+    const menuPageList = document.querySelector(".nav__mobile-list");
+
     //show About Section
-    aboutBtn.addEventListener("click", ()=>{
-        navBtnClickHandler([header, projectsSection, contactSection], aboutSection);
+    aboutBtn.forEach(el=>{
+        el.addEventListener("click", ()=>{
+            navBtnClickHandler([header, projectsSection, contactSection], aboutSection);
+        });
     });
 
     //show Projects Section
-    projectsBtn.addEventListener("click", ()=>{
-        navBtnClickHandler([header, aboutSection, contactSection], projectsSection);
+    projectsBtn.forEach(el=>{
+        el.addEventListener("click", ()=>{
+            navBtnClickHandler([header, aboutSection, contactSection], projectsSection);
+        });
     });
 
     //show Contact Section
-    contactBtn.addEventListener("click", ()=>{
-        navBtnClickHandler([header, aboutSection, projectsSection], contactSection);
-    })
+    contactBtn.forEach(el=>{
+        el.addEventListener("click", ()=>{
+            navBtnClickHandler([header, aboutSection, projectsSection], contactSection);
+        });
+    });
+
+    //show mobile menu
+    mobileMenuBtn.addEventListener("click", ()=>{
+        mobileMenuIconSwitch(mobileMenuBtn, mobileMenuCloseBtn);
+        mobileMenuAppear(menuPage, menuPageList);
+    });
+
+    //mobile menu icon toggle
 
     slider();
 }

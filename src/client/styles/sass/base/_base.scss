@@ -49,3 +49,19 @@ article{
 .hidden{
     visibility: hidden;
 }
+
+.animateMenuPageDisplay{
+    animation: heightChange 2s forwards;
+}
+
+.menuTxtDisplay{
+    animation: txtAppear 2s forwards;
+}
+
+.scale0{
+    animation: scaleTo0 1s forwards;
+}
+
+.scaleBack{
+    animation: scaleTo1 1s forwards;
+}
