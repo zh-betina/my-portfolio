@@ -31,3 +31,12 @@
         font-size: 6rem;
     }
 }
+
+@keyframes menuClose{
+    from{
+        height: 100vh;
+    }
+    to{
+        height: 0;
+    }
+}

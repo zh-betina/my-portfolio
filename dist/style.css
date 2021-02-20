@@ -32,6 +32,14 @@
     font-size: 6rem;
   }
 }
+@keyframes menuClose {
+  from {
+    height: 100vh;
+  }
+  to {
+    height: 0;
+  }
+}
 .nav__list {
   display: flex;
   flex-direction: row;
@@ -86,7 +94,7 @@
   color: #87556f;
   position: absolute;
   right: 11px;
-  top: 7px;
+  top: -8px;
   z-index: 12;
   cursor: pointer;
   transition: all 0.3s;
@@ -192,6 +200,10 @@ article {
 
 .scaleBack {
   animation: scaleTo1 1s forwards;
+}
+
+.menuClose {
+  animation: menuClose 2s forwards;
 }
 
 html {
@@ -361,6 +373,14 @@ a:hover {
 @keyframes scaleTo1 {
   to {
     font-size: 6rem;
+  }
+}
+@keyframes menuClose {
+  from {
+    height: 100vh;
+  }
+  to {
+    height: 0;
   }
 }
 .line-wrapper {

@@ -8,8 +8,17 @@ const navBtnClickHandler = (pagesToHide, pageToShow) =>{
 }
 
 const mobileMenuAppear = (wrapper, links)=>{
+    wrapper.classList.remove("menuClose");
+    links.classList.remove("menuClose");
     wrapper.classList.add("animateMenuPageDisplay");
     links.classList.add("menuTxtDisplay");
+}
+
+const mobileMenuDisappear = (wrapper, links)=>{
+    wrapper.classList.remove("animateMenuPageDisplay");
+    links.classList.remove("menuTxtDisplay");
+    wrapper.classList.add("menuClose");
+    links.classList.add("menuClose");
 }
 
 const mobileMenuIconSwitch = (btnToHide, btnToShow)=>{
@@ -20,11 +29,11 @@ const mobileMenuIconSwitch = (btnToHide, btnToShow)=>{
 }
 
 const mobileMenuIconSwitchClose = (btnToShow, btnToHide)=>{
-    btnToShow.classList.remove("scale0");
-    btnToHide.classList.remove("scaleBack");
-    btnToHide.classList.add("scale0");
-    btnToShow.classList.add("scaleBack");
+    btnToShow.classList.add("scale0");
+    btnToHide.classList.add("scaleBack");
+    btnToHide.classList.remove("scale0");
+    btnToShow.classList.remove("scaleBack");
 }
 
 
-export { navBtnClickHandler, mobileMenuAppear, mobileMenuIconSwitch };
+export { navBtnClickHandler, mobileMenuAppear, mobileMenuIconSwitch, mobileMenuIconSwitchClose, mobileMenuDisappear };

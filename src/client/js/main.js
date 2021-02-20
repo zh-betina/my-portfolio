@@ -1,4 +1,4 @@
-import { navBtnClickHandler, mobileMenuAppear, mobileMenuIconSwitch } from "./helpers.js";
+import { navBtnClickHandler, mobileMenuAppear, mobileMenuIconSwitch, mobileMenuIconSwitchClose, mobileMenuDisappear } from "./helpers.js";
 import slider from "./slider.js";
 
 const main = () => {
@@ -46,7 +46,11 @@ const main = () => {
         mobileMenuAppear(menuPage, menuPageList);
     });
 
-    //mobile menu icon toggle
+    //mobile menu icon close
+    mobileMenuCloseBtn.addEventListener("click", ()=>{
+        mobileMenuIconSwitchClose(mobileMenuCloseBtn, mobileMenuBtn);
+        mobileMenuDisappear(menuPage, menuPageList);
+    });
 
     slider();
 }
