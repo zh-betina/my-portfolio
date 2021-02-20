@@ -30,14 +30,15 @@
 .about-me--wrapper{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: nowrap;
-    padding: 1rem 1rem 15vh 1rem;
+    padding: 1rem 6rem 15vh 1rem;
     & article:last-child{
         //height: 60%;
         background-color: darken($aboutBgrClr, 1%);
+        padding: 2.6rem;
     }
-    @media (max-width: 1980px){
+    @media (max-width: 1400px){
         flex-direction: column;
     }
 }
