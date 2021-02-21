@@ -12,6 +12,10 @@
         &__contact{
             fill: $iconContClr;
             transition: all .6s;
+            @media(max-width: 550px){
+                width: 5rem;
+                height: 5rem;
+            }
             &:hover{
                 fill: darken($iconContClr, 20%);
                 transform: scale(1.1);

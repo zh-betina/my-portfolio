@@ -255,6 +255,11 @@ ul {
   text-transform: uppercase;
   transition: all 0.4s;
 }
+@media (max-width: 600px) {
+  .txt__project-link {
+    font-size: 1.6rem;
+  }
+}
 .txt__project-link:link, .txt__project-link:active, .txt__project-link:visited {
   text-decoration: underline;
   color: #29C7AC;
@@ -488,8 +493,6 @@ ul {
 }
 @media (max-width: 1000px) {
   .line-wrapper__contact {
-    flex-direction: column;
-    align-items: center;
     top: 10%;
     height: 61vh;
   }
@@ -560,6 +563,12 @@ ul {
 .icon__contact {
   fill: #c299fc;
   transition: all 0.6s;
+}
+@media (max-width: 550px) {
+  .icon__contact {
+    width: 5rem;
+    height: 5rem;
+  }
 }
 .icon__contact:hover {
   fill: #8736f9;
