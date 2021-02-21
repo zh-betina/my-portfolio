@@ -29,6 +29,7 @@ a{
             text-transform: uppercase;
             transition: all .4s;
             padding-bottom: 1rem;
+            z-index: 10;
             &:link,
             &:active,
             &:visited{

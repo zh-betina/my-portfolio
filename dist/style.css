@@ -275,6 +275,7 @@ a:link, a:active, a:visited {
   text-transform: uppercase;
   transition: all 0.4s;
   padding-bottom: 1rem;
+  z-index: 10;
 }
 .txt__project-link:link, .txt__project-link:active, .txt__project-link:visited {
   text-decoration: none;
