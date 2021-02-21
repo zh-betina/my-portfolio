@@ -10,11 +10,13 @@ aside[id="slider-control"]{
 aside[id="slider-control"] .slidr-control.right:after{
   border-color: transparent transparent transparent $projectNavBtnClr !important;
   border-width: 18px 18px 17px 24px !important;
+  transform: scale(1.5);
 }
 
 aside[id="slider-control"] .slidr-control.left:after{
   border-color: transparent $projectNavBtnClr transparent transparent !important;
   border-width: 18px 24px 17px 28px !important;
+  transform: scale(1.5);
 }
 
   // Hide unuseful controls
