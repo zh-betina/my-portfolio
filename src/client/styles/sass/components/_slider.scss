@@ -1,25 +1,29 @@
-//arrows
+//arrow controls
 
-aside[id="slider-control"] .slidr-control.right {
-    width: 50px !important;
-    height: 50px !important;
-    top: 50% !important;
-    margin-top: -25px !important;
-    right: -25px !important;
-    border-radius: 25px;
-    border-color: transparent;
-    background: url('../../../views/media/png/next.png') 14px 13px no-repeat;
-    opacity: 0.8;
+aside[id="slider-control"]{
+  width: auto !important;
+  @media (max-width: 665px){
+    display: none !important;
   }
+}
 
+aside[id="slider-control"] .slidr-control.right:after{
+  border-color: transparent transparent transparent $projectNavBtnClr !important;
+  border-width: 18px 18px 17px 24px !important;
+}
 
-  
-  // Hide a single arrow within a single controller.
-aside[id="slider-control"] .slidr-control.right:after,
-aside[id="slider-control"] .slidr-control.left:after,
+aside[id="slider-control"] .slidr-control.left:after{
+  border-color: transparent $projectNavBtnClr transparent transparent !important;
+  border-width: 18px 24px 17px 28px !important;
+}
+
+  // Hide unuseful controls
 aside[id="slider-control"] .slidr-control.up:after,
 aside[id="slider-control"] .slidr-control.down:after{
     border-color: transparent !important;
-  }
+}
+
+
+
 
   //<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>

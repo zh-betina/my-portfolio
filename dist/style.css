@@ -505,6 +505,13 @@ a:hover {
 .img__about-me {
   border-radius: 8px;
 }
+.img__info {
+  width: 10rem;
+  height: auto;
+  position: relative;
+  left: 11rem;
+  top: 2rem;
+}
 
 .projects__wrapper {
   display: flex;
@@ -514,28 +521,48 @@ a:hover {
 }
 
 .project__img {
-  max-height: 40vh;
+  max-height: 60vh;
   max-width: 100vw;
-  margin-left: -1.2rem;
 }
 
-aside[id=slider-control] .slidr-control.right {
-  width: 50px !important;
-  height: 50px !important;
-  top: 50% !important;
-  margin-top: -25px !important;
-  right: -25px !important;
-  border-radius: 25px;
-  border-color: transparent;
-  background: url("../../../views/media/png/next.png") 14px 13px no-repeat;
-  opacity: 0.8;
+aside[id=slider-control] {
+  width: auto !important;
+}
+@media (max-width: 665px) {
+  aside[id=slider-control] {
+    display: none !important;
+  }
 }
 
-aside[id=slider-control] .slidr-control.right:after,
-aside[id=slider-control] .slidr-control.left:after,
+aside[id=slider-control] .slidr-control.right:after {
+  border-color: transparent transparent transparent #29C7AC !important;
+  border-width: 18px 18px 17px 24px !important;
+}
+
+aside[id=slider-control] .slidr-control.left:after {
+  border-color: transparent #29C7AC transparent transparent !important;
+  border-width: 18px 24px 17px 28px !important;
+}
+
 aside[id=slider-control] .slidr-control.up:after,
 aside[id=slider-control] .slidr-control.down:after {
   border-color: transparent !important;
+}
+
+.info__window {
+  position: absolute;
+  z-index: 11;
+  width: 25rem;
+  height: 18vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 36vh;
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+@media (min-width: 665px) {
+  .info__window {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

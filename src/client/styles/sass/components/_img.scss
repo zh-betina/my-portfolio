@@ -1,6 +1,12 @@
 .img{
     &__about-me{
-
         border-radius: 8px;
+    }
+    &__info{
+        width: 10rem;
+        height: auto;
+        position: relative;
+        left: 11rem;
+        top: 2rem;
     }
 }
