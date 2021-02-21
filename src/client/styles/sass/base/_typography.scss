@@ -17,6 +17,10 @@ a{
     }
 }
 
+ul{
+    list-style: none;
+}
+
 .txt{
     &--bold-imp{
         color: $curlyBrClr;
@@ -28,7 +32,6 @@ a{
             font-weight: 600;
             text-transform: uppercase;
             transition: all .4s;
-            //z-index: 10;
             &:link,
             &:active,
             &:visited{

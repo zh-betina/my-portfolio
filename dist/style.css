@@ -241,6 +241,10 @@ a:link, a:active, a:visited {
   color: #29C7AC;
 }
 
+ul {
+  list-style: none;
+}
+
 .txt--bold-imp {
   color: #559DE0;
 }
