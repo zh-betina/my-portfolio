@@ -251,12 +251,12 @@ ul {
 .txt__project-link {
   font-family: "Josefin Sans", sans-serif;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   transition: all 0.4s;
 }
 .txt__project-link:link, .txt__project-link:active, .txt__project-link:visited {
-  text-decoration: none;
+  text-decoration: underline;
   color: #29C7AC;
 }
 .txt__project-link:hover {
@@ -599,6 +599,7 @@ ul {
 
 aside[id=slider-control] {
   width: auto !important;
+  bottom: -13rem !important;
 }
 
 aside[id=slider-control] .slidr-control.right:after {
@@ -626,22 +627,6 @@ aside[id=slider-control] .slidr-control.left:after {
 aside[id=slider-control] .slidr-control.up:after,
 aside[id=slider-control] .slidr-control.down:after {
   border-color: transparent !important;
-}
-
-.info__window {
-  position: absolute;
-  z-index: 8;
-  width: 25rem;
-  height: 18vh;
-  background-color: rgba(0, 0, 0, 0.7);
-  top: 36vh;
-  border: 1px solid transparent;
-  border-radius: 20px;
-}
-@media (min-width: 665px) {
-  .info__window {
-    display: none;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
