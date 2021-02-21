@@ -44,6 +44,30 @@
     height: 0;
   }
 }
+@keyframes moveLeftRight {
+  20% {
+    transform: translateX(-8rem);
+  }
+  40% {
+    transform: translateX(3rem);
+  }
+  60% {
+    transform: translateX(-8rem);
+  }
+  80% {
+    transform: translateX(3rem);
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+    display: none;
+  }
+}
 .nav__list {
   display: flex;
   flex-direction: row;
@@ -214,6 +238,19 @@ article {
 
 .menuClose {
   animation: menuClose 2s forwards;
+}
+
+.moveLeftRight {
+  animation: moveLeftRight 2.4s forwards;
+  animation-delay: 1s;
+}
+
+.fadeOut {
+  animation: fadeOut 0.4s;
+  animation-delay: 4s;
+  animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 html {
@@ -409,6 +446,30 @@ a:hover {
     height: 0;
   }
 }
+@keyframes moveLeftRight {
+  20% {
+    transform: translateX(-8rem);
+  }
+  40% {
+    transform: translateX(3rem);
+  }
+  60% {
+    transform: translateX(-8rem);
+  }
+  80% {
+    transform: translateX(3rem);
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -10;
+    display: none;
+  }
+}
 .line-wrapper {
   display: flex;
   flex-direction: row;
@@ -551,7 +612,7 @@ aside[id=slider-control] .slidr-control.down:after {
 
 .info__window {
   position: absolute;
-  z-index: 11;
+  z-index: 8;
   width: 25rem;
   height: 18vh;
   background-color: rgba(0, 0, 0, 0.7);
