@@ -265,6 +265,9 @@ a:link, a:active, a:visited {
   color: #29C7AC;
 }
 
+.txt--bold-imp {
+  color: #559DE0;
+}
 .txt__project-link {
   font-family: "Josefin Sans", sans-serif;
   font-size: 2rem;
@@ -329,7 +332,13 @@ a:link, a:active, a:visited {
   font-size: 20rem;
   letter-spacing: 1.6rem;
 }
-@media (max-width: 1379px) {
+@media (max-width: 550px) {
+  .txt__header span:first-child {
+    font-size: 7rem;
+    letter-spacing: 0.6rem;
+  }
+}
+@media (min-width: 551px) and (max-width: 1379px) {
   .txt__header span:first-child {
     font-size: 15rem;
     letter-spacing: 0;
@@ -340,9 +349,25 @@ a:link, a:active, a:visited {
   font-size: 15rem;
   opacity: 0;
 }
-@media (max-width: 1379px) {
+@media (max-width: 550px) {
+  .txt__header span:nth-child(2) {
+    font-size: 5rem;
+  }
+}
+@media (min-width: 551px) and (max-width: 1379px) {
   .txt__header span:nth-child(2) {
     font-size: 10rem;
+  }
+}
+@media (max-width: 550px) {
+  .txt__header {
+    left: 12rem;
+    top: 21rem;
+  }
+}
+@media (min-width: 551px) and (max-width: 750px) {
+  .txt__header {
+    left: 3rem;
   }
 }
 .txt__section--heading {
@@ -391,7 +416,7 @@ a:link, a:active, a:visited {
   text-transform: uppercase;
   text-align: center;
   color: #787099;
-  font-size: 3.4rem;
+  font-size: 2.8rem;
 }
 @media (max-width: 420px) {
   .txt__about-me--large {

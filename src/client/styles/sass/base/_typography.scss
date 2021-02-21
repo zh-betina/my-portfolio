@@ -18,6 +18,9 @@ a{
 }
 
 .txt{
+    &--bold-imp{
+        color: $curlyBrClr;
+    }
     &__project{
         &-link{
             font-family: 'Josefin Sans', sans-serif;
@@ -72,7 +75,11 @@ a{
         span:first-child{
             font-size: 20rem;
             letter-spacing: 1.6rem;
-            @media (max-width: 1379px){
+            @media (max-width: 550px){
+                font-size: 7rem;
+                letter-spacing: .6rem;
+            }
+            @media (min-width: 551px) and( max-width: 1379px){
                 font-size: 15rem;
                 letter-spacing: 0;
             }
@@ -81,7 +88,10 @@ a{
             display: block;
             font-size: 15rem;
             opacity: 0;
-            @media (max-width: 1379px){
+            @media (max-width: 550px){
+                font-size: 5rem;
+            }
+            @media (min-width: 551px) and (max-width: 1379px){
                 font-size: 10rem;
             }
         }
@@ -91,6 +101,13 @@ a{
         left: 30rem;
         position: relative;
         z-index: 5;
+        @media(max-width: 550px){
+            left: 12rem;
+            top: 21rem;
+        }
+        @media(min-width: 551px) and( max-width: 750px){
+            left: 3rem;
+        }
     }
     &__section{
         &--heading{
@@ -134,7 +151,7 @@ a{
             text-transform: uppercase;
             text-align: center;
             color: lighten($pPrimaryClr, 2%);
-            font-size: 3.4rem;
+            font-size: 2.8rem;
             @media(max-width: 420px){
                 font-size: 2.5rem;
             }
