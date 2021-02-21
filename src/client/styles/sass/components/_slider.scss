@@ -2,21 +2,24 @@
 
 aside[id="slider-control"]{
   width: auto !important;
-  @media (max-width: 665px){
-    display: none !important;
-  }
 }
 
 aside[id="slider-control"] .slidr-control.right:after{
   border-color: transparent transparent transparent $projectNavBtnClr !important;
   border-width: 18px 18px 17px 24px !important;
   transform: scale(1.5);
+  @media (max-width: 665px){
+    transform: scale(1) !important;
+  }
 }
 
 aside[id="slider-control"] .slidr-control.left:after{
   border-color: transparent $projectNavBtnClr transparent transparent !important;
   border-width: 18px 24px 17px 28px !important;
   transform: scale(1.5);
+  @media (max-width: 665px){
+    transform: scale(1) !important;
+  }
 }
 
   // Hide unuseful controls
@@ -25,7 +28,3 @@ aside[id="slider-control"] .slidr-control.down:after{
     border-color: transparent !important;
 }
 
-
-
-
-  //<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
