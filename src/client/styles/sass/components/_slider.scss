@@ -2,7 +2,10 @@
 
 aside[id="slider-control"]{
   width: auto !important;
-  bottom: -13rem !important;
+  bottom: -11rem !important;
+  @media (max-height: 1000px){
+    bottom: -5rem !important;
+  }
 }
 
 aside[id="slider-control"] .slidr-control.right:after{
