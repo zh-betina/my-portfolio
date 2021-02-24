@@ -8,7 +8,21 @@ aside[id="slider-control"]{
   }
 }
 
+aside[id="slider-control"] .slidr-control.right {
+  width: 83px !important;
+  height: 83px !important;
+  top: 50% !important;
+  margin-top: -39px !important;
+  right: -25px !important;
+  /* border-radius: 25px; */
+  background: url(./next.png) no-repeat;
+  @media (max-screen: 665px){
+    background: url(./nextSmall.png) no-repeat;
+  }
+}
+
 aside[id="slider-control"] .slidr-control.right:after{
+  visibility: hidden;
   border-color: transparent transparent transparent $projectNavBtnClr !important;
   border-width: 18px 18px 17px 24px !important;
   transform: scale(1.5);
