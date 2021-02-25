@@ -19,5 +19,9 @@
     &__contact{
         background-color: $contactBgrClr;
         width: 100vw;
+        & p:last-child{
+            position: absolute;
+            bottom: 2rem;
+        }
     }
 }

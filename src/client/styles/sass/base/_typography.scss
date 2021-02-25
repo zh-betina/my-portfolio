@@ -22,6 +22,14 @@ ul{
 }
 
 .txt{
+    &--tiny{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        color: $navLinkClr;
+    }
     &--bold-imp{
         color: $curlyBrClr;
     }

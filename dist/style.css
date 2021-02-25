@@ -245,6 +245,14 @@ ul {
   list-style: none;
 }
 
+.txt--tiny {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #29C7AC;
+}
 .txt--bold-imp {
   color: #559DE0;
 }
@@ -554,6 +562,10 @@ ul {
 .section__contact {
   background-color: #221f3b;
   width: 100vw;
+}
+.section__contact p:last-child {
+  position: absolute;
+  bottom: 2rem;
 }
 
 .btn {
