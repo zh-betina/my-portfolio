@@ -145,6 +145,16 @@ ul{
             @media (max-width: 1014px){
                 font-size: 2rem;
             }
+            &-middle{
+                font-size: 2.5rem;
+                text-align: center;
+                color: $pPrimaryClr;
+                margin: 2rem;
+                font-family: 'Lato', sans-serif;
+                @media (max-width: 1014px){
+                    font-size: 2rem;
+                }
+            }
         }
         &--imp{
             color: $txtImportant;

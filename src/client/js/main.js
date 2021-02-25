@@ -1,5 +1,4 @@
 import { navBtnClickHandler, mobileMenuAppear, mobileMenuIconSwitch, mobileMenuIconSwitchClose, mobileMenuDisappear } from "./helpers.js";
-import slider from "./slider.js";
 
 const main = () => {
     //btns
@@ -70,8 +69,6 @@ const main = () => {
         mobileMenuIconSwitchClose(mobileMenuCloseBtn, mobileMenuBtn);
         mobileMenuDisappear(menuPage, menuPageList);
     });
-
-    slider();
 }
 
 main();

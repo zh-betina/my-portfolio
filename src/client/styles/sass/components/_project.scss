@@ -2,15 +2,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 10%;
+    width: 100vw;
+    padding-bottom: 15%;
 }
 
 .project{
+    margin-bottom: 5rem;
+    &__seperator{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
     &__img{
-        max-height: 50vh;
+        max-height: 70vh;
         max-width: 100vw;
         @media (max-height: 1000px){
-            max-height: 30vh;
+            max-height: 40vh;
             margin-left: 50%;
             transform: translateX(-50%);
         }
@@ -21,6 +27,7 @@
             display: flex;
             flex-direction: row;
             justify-content: space-around;
+            margin: 5rem;
         }
     }
 }
