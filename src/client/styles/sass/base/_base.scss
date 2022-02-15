@@ -4,7 +4,6 @@ html,
 body{
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     height: 100vh;
     min-height: 100vh;
     min-width: 100vw;
@@ -15,11 +14,11 @@ body{
 body{
     background-color: $bodyBgrClr;
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 section {
     margin: 0;
-    padding: 12vh 2% 5% 2%;
 }
 
 article{

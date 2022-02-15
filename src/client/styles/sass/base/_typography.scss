@@ -1,7 +1,7 @@
 @import "../abstracts/variables";
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Source+Code+Pro:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&family=Quicksand:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
 html{
     font-size: 62.5%;
@@ -23,7 +23,7 @@ ul{
 
 .txt{
     &--tiny{
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-size: 1.5rem;
         left: 50%;
         transform: translateX(-50%);
@@ -35,7 +35,7 @@ ul{
     }
     &__project{
         &-link{
-            font-family: 'Josefin Sans', sans-serif;
+            font-family: 'Poppins', sans-serif;
             font-size: 2rem;
             font-weight: 500;
             text-transform: uppercase;
@@ -61,7 +61,7 @@ ul{
     &__nav{
         text-transform: uppercase;
         font-size: 3rem;
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Quicksand', sans-serif;
         @media (max-width: 665px){
             font-size: 5rem;
         }
@@ -89,50 +89,64 @@ ul{
         }
     }
     &__header{
-        span:first-child{
-            font-size: 20rem;
-            letter-spacing: 1.6rem;
-            @media (max-width: 550px){
-                font-size: 7rem;
-                letter-spacing: .6rem;
-            }
-            @media (min-width: 551px) and( max-width: 1379px){
-                font-size: 15rem;
-                letter-spacing: 0;
-            }
-        }
-        span:nth-child(2){
-            display: block;
-            font-size: 15rem;
-            opacity: 0;
-            @media (max-width: 550px){
-                font-size: 5rem;
-            }
-            @media (min-width: 551px) and (max-width: 1379px){
-                font-size: 10rem;
-            }
-        }
+        font-family: 'Poppins', sans-serif;
         color: $headerTxtClr;
-        z-index: 7;
-        top: 11rem;
-        left: 30rem;
-        position: relative;
-        z-index: 5;
-        @media(max-width: 550px){
-            left: 12rem;
-            top: 21rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: .8rem;
+        height: 40vh;
+        align-content: center;
+        justify-content: flex-end;
+
+        & span:first-child {
+            font-size: 72px;
+            background: -webkit-linear-gradient(#77cdd2, #c7d9fa);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            font-size: 3.4rem;
+            color: #84c8d8;
         }
-        @media(min-width: 551px) and( max-width: 750px){
-            left: 3rem;
+
+        & span:nth-child(2) {
+            font-size: 1.3rem;
+            color: #284584;
+            margin-bottom: 1.8rem;
         }
+
+        & span:nth-child(3) {
+            font-size: 2rem;
+            color: #91c3de;
+            background: -webkit-linear-gradient(#91c3de, #c7d9fa);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        & span:nth-child(4) {
+            font-size: 1.2rem;
+            color: #284584;
+        }
+
+        // @media(max-width: 550px){
+        //     left: 12rem;
+        //     top: 21rem;
+        // }
+        // @media(min-width: 551px) and( max-width: 750px){
+        //     left: 3rem;
+        // }
     }
     &__section{
         &--heading{
             font-size: 4.8rem;
             margin-bottom: 2%;
             text-align: center;
-            color: $headingPrimaryClr;
-            font-family: 'Raleway Dots', cursive;
+            background: -webkit-linear-gradient(#77cdd2, #c7d9fa);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: 'Poppins', cursive;
             @media (max-width: 1379px){
                 font-size: 3rem;
             }
@@ -174,7 +188,7 @@ ul{
     }
     &__about-me{
         &--large{
-            font-family: 'Josefin Sans', sans-serif;
+            font-family: 'Quicksand', sans-serif;
             text-transform: uppercase;
             text-align: center;
             color: lighten($curlyBrClr, 5%);
